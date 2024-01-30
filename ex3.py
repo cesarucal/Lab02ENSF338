@@ -15,35 +15,29 @@ Implemented in the code below.
 4. Discuss a sample output. Where does execution time go?
 Output: 
 test_function():
-         69 function calls (24 primitive calls) in 0.001 seconds
+         69 function calls (24 primitive calls) in 0.000 seconds
 
    Ordered by: standard name
 
    ncalls  tottime  percall  cumtime  percall filename:lineno(function)
         1    0.000    0.000    0.000    0.000 <string>:1(<module>)
-    55/10    0.000    0.000    0.000    0.000 ex3.py:19(sub_function)
-        1    0.000    0.000    0.000    0.000 ex3.py:27(test_function)
+    55/10    0.000    0.000    0.000    0.000 ex3.py:49(sub_function)
+        1    0.000    0.000    0.000    0.000 ex3.py:57(test_function)
         1    0.000    0.000    0.000    0.000 {built-in method builtins.exec}
-       10    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+       10    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}     
         1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
 
 
 third_function():
-         5 function calls in 62.646 seconds
+         4 function calls in 7.764 seconds
 
    Ordered by: standard name
 
    ncalls  tottime  percall  cumtime  percall filename:lineno(function)
-        1    1.407    1.407   11.268   11.268 <string>:1(<module>)
-        1    0.000    0.000    9.861    9.861 ex3.py:34(third_function)
-        1    9.861    9.861    9.861    9.861 ex3.py:36(<listcomp>)
-        1    0.000    0.000   11.269   11.269 {built-in method builtins.exec}
-        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
-Discussion:
-`test_function` runs too fast to be measured, so discussing `third_function` only.
-The whole profiling took 11.269s.
-The list comprehension in `third_function` took 9.861s.
-The overhead of the function call is 1.407s.
+        1    0.787    0.787    7.764    7.764 <string>:1(<module>)
+        1    6.977    6.977    6.977    6.977 ex3.py:64(third_function)
+        1    0.000    0.000    7.764    7.764 {built-in method builtins.exec}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects
 """
 
 def sub_function(n):
