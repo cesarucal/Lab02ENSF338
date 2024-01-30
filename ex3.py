@@ -29,16 +29,27 @@ test_function():
 
 
 third_function():
-         4 function calls in 7.764 seconds
+         5 function calls in 72.196 seconds
 
    Ordered by: standard name
 
    ncalls  tottime  percall  cumtime  percall filename:lineno(function)
-        1    0.787    0.787    7.764    7.764 <string>:1(<module>)
-        1    6.977    6.977    6.977    6.977 ex3.py:64(third_function)
-        1    0.000    0.000    7.764    7.764 {built-in method builtins.exec}
-        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects
-"""
+        1    8.473    8.473   72.196   72.196 <string>:1(<module>)
+        1    0.000    0.000   63.722   63.722 ex3.py:64(third_function)
+        1   63.722   63.722   63.722   63.722 ex3.py:66(<listcomp>)
+        1    0.000    0.000   72.196   72.196 {built-in method builtins.exec}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+
+        'test_function' runs too fast every time. So everything is 0. 
+        tottime (total time spent in the function excluding time in subfunctions): 0.000 seconds.
+        cumtime (total time spent in the function including time in subfunctions): 0.000 seconds.
+       
+        'third_function' 
+        tottime: 8.473 seconds.
+        cumtime: 72.196 seconds.
+        Most of the time is spent in the list comprehension which takes 63.722 seconds.
+        
+        """
 
 def sub_function(n):
     # sub function that calculates the factorial of n
