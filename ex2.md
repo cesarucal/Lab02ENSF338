@@ -12,5 +12,5 @@ Exercise 2
 
     5. Linear search would be better for Small data sets or data sets tat are irregularly distributed (has outliers). Binary Search and Interpolation assume a certain data structure/ order and their efficiency diminishes when the data doesn't conform to these assumptions.
 
-    6. To improve Binary search 
+    6. To improve Binary and Interpolation search for these scensrios you would have to rearrange the data set in a way that confides with Interpolation and Binary search. For example if a list is not in ascending order then write a program that rearanges the list. 
     
