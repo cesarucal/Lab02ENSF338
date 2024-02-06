@@ -39,7 +39,7 @@ def fibonacci_memo(n, memo=None):
 # 5. The time complexity of the optimized algoritm is O(n).
     
 import time
-import matplotlib as plt
+import matplotlib.pyplot as plt
 
 def fibonacci_recursive(n):
     if n == 0 or n == 1:
