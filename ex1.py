@@ -22,7 +22,7 @@ def func(n):
 
     A. An expression for its time complexity is O(2^n) due to its exponential growth in the number of function calls.
 
-    4.
+    4. (code below)
 """
 def fibonacci_memo(n, memo=None):
     if memo is None:
