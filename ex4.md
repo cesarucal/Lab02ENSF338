@@ -1,1 +1,9 @@
-1. The algorithm I would probably use is Binary in the conext of the question. 
+1. The algorithm I would probably use is linear in the conext of the question. Since I have no knowledge of the floorplan I would start off at 'the start of the array' or the first room (EY 100) and work my way through the halway until I find the room I am loooking for. 
+
+2. It would take 15 steps including the first element in the array and the room itself because that's how many rooms I would check before finding EY 128. the steps in this case is checking the room number as I walk past. 
+
+3. This is neither because the room is located somewhere in the middle. Thus can't be best since best is the first room and can't be worst since the last room is worst. 
+
+4. with this particular layout, the best case for linear search would be if the first elemnt (in this case the first room) was the room I was looking for. Thus right as I enter and turn left, the first room I see is EY 182. The worst case scenario would be if I was to turn right and walk all the way around to the end of the rooms of that floor and the last room that I reached was EY 128, or in linear search terms, the last element of the array. 
+
+5. After knowing the layout of the room, Binary search would become my best option. because the rooms are arranged in a certain sequence that complies nicely with binary (in ascending order), we can divide the rooms in half, check to see if the the room number is greater or lower than the midpoint. If it is greater then you would use the right side of the array, or in the correct context, the right side of the middle of the rooms. Then split in half again, and keep repeating this process until the room is found. This would take significantly less steps than binary search.
