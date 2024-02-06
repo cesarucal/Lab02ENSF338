@@ -1,3 +1,5 @@
+
+
 import timeit
 import random
 import numpy as np
@@ -71,7 +73,6 @@ plt.legend()
 plt.show()
 
 '''
-Answer to exercise 5, question 4:
 The function in question is modeled as a linear interpolating function with the form y = ax + b, where 'a' represents the slope, and 'b' 
 is the y-intercept. Concurrently, a logarithmic function is expressed as y = a * log(x) + b, where 'a' dictates the scaling and 'b' denotes 
 the vertical shift. Analyzing the algorithm's time complexity, which resembles a straight line in the output, suggests a linear relationship. 
